@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
   res.send("FEYA backend is running 🚀");
 });
 
-app.listen(PORT, () => {
+// IMPORTANT: bind to 0.0.0.0 for Render
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
